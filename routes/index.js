@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-  res.send('Bienvenido a la API de metas');
+  res.send('Bienvenido a la API de metas de DANIEL RUIZ');
 });
 
 module.exports = router;
