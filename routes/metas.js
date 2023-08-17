@@ -10,38 +10,38 @@ const {
 } = require('../db/pedidos');
 const { body, validationResult } = require('express-validator');
 
-let metas = [
-  {
-    id: '1',
-    detalles: 'Correr por 30 minutos',
-    periodo: 'dia',
-    eventos: '1',
-    icono: '🏃‍♂️',
-    meta: 365,
-    plazo: '2030-01-01',
-    completado: 5,
-  },
-  {
-    id: '2',
-    detalles: 'Leer libros',
-    periodo: 'año',
-    eventos: '6',
-    icono: '📚',
-    meta: 12,
-    plazo: '2030-01-01',
-    completado: 0,
-  },
-  {
-    id: '3',
-    detalles: 'Viajar a nuevos lugares',
-    periodo: 'mes',
-    eventos: '1',
-    icono: '✈',
-    meta: 60,
-    plazo: '2030-01-01',
-    completado: 40,
-  },
-];
+// let metas = [
+//   {
+//     id: '1',
+//     detalles: 'Correr por 30 minutos',
+//     periodo: 'dia',
+//     eventos: '1',
+//     icono: '🏃‍♂️',
+//     meta: 365,
+//     plazo: '2030-01-01',
+//     completado: 5,
+//   },
+//   {
+//     id: '2',
+//     detalles: 'Leer libros',
+//     periodo: 'año',
+//     eventos: '6',
+//     icono: '📚',
+//     meta: 12,
+//     plazo: '2030-01-01',
+//     completado: 0,
+//   },
+//   {
+//     id: '3',
+//     detalles: 'Viajar a nuevos lugares',
+//     periodo: 'mes',
+//     eventos: '1',
+//     icono: '✈',
+//     meta: 60,
+//     plazo: '2030-01-01',
+//     completado: 40,
+//   },
+// ];
 
 /* GET metas listing. */
 router.get('/', function (req, res, next) {
