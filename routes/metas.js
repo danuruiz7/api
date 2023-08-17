@@ -93,17 +93,17 @@ router.post(
 /*PUT Actualizar meta */
 router.put(
   '/:id',
-  body('detalles').isLength({ min: 5 }),
-  body('periodo').not().isEmpty(),
+  // body('detalles').isLength({ min: 5 }),
+  // body('periodo').not().isEmpty(),
   function (req, res, next) {
-    const errors = validationResult(req);
-    if (!errors.isEmpty()) {
-      return res.status(400).json({ error: errors.array() });
-    }
+    // const errors = validationResult(req);
+    // if (!errors.isEmpty()) {
+    //   return res.status(400).json({ error: errors.array() });
+    // }
     const body = req.body;
     const id = req.params.id;
 
-    if (body.id !== +id) {
+    if (body.id !== id) {
       return res.sendStatus(409);
     }
 
